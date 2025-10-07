@@ -6,8 +6,7 @@
 
 ## 📘 Descrição do Projeto
 
-O **Delegacia Dashboard** é uma aplicação de análise criminal interativa desenvolvida em **Streamlit**, combinando **modelos supervisionados e não supervisionados de IA** para apoiar equipes de investigação da **Polícia Civil de Pernambuco (PC-PE)**.  
-A plataforma oferece **insights preditivos, detecção de padrões e anomalias**, além de visualizações intuitivas para **tomada de decisão em segurança pública**.
+O **Delegacia Dashboard** é uma aplicação de análise criminal interativa desenvolvida em **Streamlit**, combinando **modelos supervisionados e não supervisionados de IA** para apoiar equipes de investigação da **Polícia Civil de Pernambuco (PC-PE)**. A plataforma oferece **insights preditivos, detecção de padrões e anomalias**, além de visualizações intuitivas para **tomada de decisão em segurança pública**.
 
 ---
 
