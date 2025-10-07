@@ -17,6 +17,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import warnings
+from sklearn.manifold import TSNE
+
 warnings.filterwarnings('ignore')
 
 # Importar utilitários
@@ -593,7 +595,7 @@ with tab5:
                 
                 fig_perf.add_trace(go.Scatter(
                     x=performance_data['k_values'],
-                    y=performance_data['recall'],
+                    y=performance_data['recall'],  # Aqui estava o erro
                     mode='lines+markers',
                     name='Recall',
                     line=dict(color='red')
@@ -1127,18 +1129,13 @@ with tab6:
                 st.success(f"✅ {patterns['total_patterns_found']} tipo(s) de padrão descoberto(s)!")
                 
                 # Exibir cada padrão
-                for pattern in patterns['patterns']:
+                for idx, pattern in enumerate(patterns['patterns']):
                     st.markdown(f"### {pattern['type']}")
                     st.markdown(f"*{pattern['description']}*")
-                    
-                    # Visualização
                     fig_pattern = create_pattern_network(patterns)
-                    st.plotly_chart(fig_pattern, use_container_width=True)
-                    
-                    # Tabela de dados
+                    st.plotly_chart(fig_pattern, use_container_width=True, key=f"pattern_{idx}")
                     with st.expander("📋 Ver Dados Detalhados"):
                         st.dataframe(pattern['data'], use_container_width=True)
-                    
                     st.markdown("---")
                 
                 # Insights práticos

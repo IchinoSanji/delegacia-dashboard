@@ -265,7 +265,7 @@ class UnsupervisedRiskAnalyzer:
                 actual_perplexity = max(min_perplexity, min(perplexity, max_allowed_perplexity))
             
             self.tsne = TSNE(n_components=2, random_state=self.random_state, 
-                           perplexity=actual_perplexity, n_iter=1000)
+                 perplexity=actual_perplexity)
             X_tsne = self.tsne.fit_transform(X_scaled)
             
             df_tsne = df.copy()
