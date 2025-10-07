@@ -44,21 +44,6 @@ Construir uma **prova de conceito (PoC)** de uma solução analítica capaz de:
 
 ---
 
-## 🧠 Arquitetura da Solução
-
-```
-📁 delegacia-dashboard/
-├── data/                # Amostras e scripts de coleta
-├── notebooks/           # Notebooks de EDA e modelagem
-├── src/                 # Código de preprocessamento e treino
-├── reports/             # Figuras, métricas e relatórios
-├── app.py               # Aplicação Streamlit principal
-├── requirements.txt     # Dependências do projeto
-└── README.md            # Documentação principal
-```
-
----
-
 ## ⚙️ Tecnologias Utilizadas
 
 | Categoria | Ferramentas |
@@ -171,13 +156,11 @@ Você pode publicar o dashboard em diferentes plataformas gratuitas de forma sim
 
 ## 👥 Equipe do Projeto
 
-| Integrante | Função |
-|-------------|--------|
-| (Seu Nome) | Cientista de Dados / Dev Backend |
-| (Integrante 2) | Engenheiro de Dados |
-| (Integrante 3) | Analista de Negócios |
-| (Integrante 4) | Desenvolvedor Frontend |
-| (Integrante 5) | UX/UI Designer |
+- Abraão Saraiva 
+- Carlos Henrique
+- Klara Marinho
+- Lucas Eduardo
+- Luiz Reis
 
 ---
 
@@ -187,17 +170,9 @@ Projeto desenvolvido exclusivamente para fins **acadêmicos** no contexto do **P
 
 ---
 
-## 🎥 Demonstração
-
-📺 *[Adicione aqui o link do vídeo de demonstração (YouTube, Google Drive ou Loom)]*
-
----
-
 ## 📚 Referências
 
 - Desafio oficial: [Delegacia 5.0 — Solução tecnológica para análise preditiva de crimes](https://desafios.pe.gov.br/challenge?url=projeto-delegacia-50-solucao-tecnologica-para-analise-preditiva-de-crimes)
-- Documentação: [Streamlit Docs](https://docs.streamlit.io)
-- Frameworks: [scikit-learn](https://scikit-learn.org/stable/), [XGBoost](https://xgboost.readthedocs.io/)
 
 ---
 
